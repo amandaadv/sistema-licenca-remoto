@@ -366,11 +366,6 @@ async def health():
 # START SERVIDOR (LOCAL / RAILWAY)
 # ==========================================
 
-if __name__ == "__main__":
-    import os
-    import uvicorn
 
-    PORT = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=PORT)
 
 
