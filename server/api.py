@@ -362,21 +362,15 @@ async def health():
 # INICIALIZAÇÃO
 # ==========================================
 
-if __name__ == "__main__":
-    print("\n" + "=" * 60)
-    print("  SERVIDOR DE LICENÇAS ZAPJOE V2 - INICIANDO")
-    print("=" * 60)
-    print()
-    print(f"  📂 Arquivo de dados: {DATA_FILE}")
-    print(f"  🔑 Master Key: {MASTER_KEY[:10]}...")
-    print()
-    print("  🚀 Servidor rodando em: http://localhost:8000")
-    print("  📖 Documentação: http://localhost:8000/docs")
-    print()
-    print("=" * 60)
-    print()
+# ==========================================
+# START SERVIDOR (LOCAL / RAILWAY)
+# ==========================================
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
+    import os
+    import uvicorn
+
     PORT = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=PORT)
+
 
