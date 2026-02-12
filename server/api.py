@@ -376,4 +376,7 @@ if __name__ == "__main__":
     print("=" * 60)
     print()
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    if __name__ == "__main__":
+    PORT = int(os.environ.get("PORT", 8000))
+    uvicorn.run("api:app", host="0.0.0.0", port=PORT)
+
