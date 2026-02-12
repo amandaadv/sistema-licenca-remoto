@@ -1,0 +1,13 @@
+{
+  "vpsbrasil": {
+    "senha_hash": "d6cc752f870aac24bd6a3957f10b6bf45edf3a5fd0d7a3b971f4b9e166223e54",
+    "salt": "4dbf83752da8419748e6ae477484fe69",
+    "criado_em": "2026-02-12T09:52:50.297100",
+    "validade": "2027-02-12T09:52:50.297075",
+    "ativo": true,
+    "hardware_id": null,
+    "ultimo_login": null,
+    "total_logins": 0,
+    "versao_programa": "2.0"
+  }
+}
